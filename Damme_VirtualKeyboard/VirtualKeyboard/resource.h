@@ -111,10 +111,13 @@
 #define IDC_BUTTON_ARRIGHT              1170
 
 #define ID_ONE1                           2001
-#define ID_ONE2                           2001
-#define ID_ONE3                           2001
-#define ID_ONE4                           2001
-#define ID_ONE5                           2001
+#define ID_ONE2                           2002
+#define ID_ONE3                           2003
+#define ID_ONE4                           2004
+#define ID_ONE5                           2005
+
+#define ID_ONE4                           2006
+#define ID_ONE5                           2007
 
 
 
