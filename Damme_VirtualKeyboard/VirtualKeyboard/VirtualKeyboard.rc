@@ -1,0 +1,196 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_BOARD DIALOGEX 0, 0, 539, 147
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_NOACTIVATE
+CAPTION "Virtual Keyboard"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "esc",IDC_BUTTON1,7,7,24,14
+    PUSHBUTTON      "F1",IDC_BUTTON2,43,7,21,14
+    PUSHBUTTON      "F2",IDC_BUTTON3,65,7,21,14
+    PUSHBUTTON      "F3",IDC_BUTTON4,88,7,21,14
+    PUSHBUTTON      "F4",IDC_BUTTON5,110,7,21,14
+    PUSHBUTTON      "F5",IDC_BUTTON6,139,7,21,14
+    PUSHBUTTON      "F6",IDC_BUTTON7,161,7,21,14
+    PUSHBUTTON      "F7",IDC_BUTTON8,183,7,21,14
+    PUSHBUTTON      "F8",IDC_BUTTON9,205,7,21,14
+    PUSHBUTTON      "F9",IDC_BUTTON10,231,7,21,14
+    PUSHBUTTON      "F10",IDC_BUTTON11,253,7,21,14
+    PUSHBUTTON      "F11",IDC_BUTTON12,275,7,21,14
+    PUSHBUTTON      "F12",IDC_BUTTON13,298,7,21,14
+    PUSHBUTTON      "psc",IDC_BUTTON14,337,8,21,14
+    PUSHBUTTON      "slk",IDC_BUTTON15,359,8,21,14
+    PUSHBUTTON      "brk",IDC_BUTTON16,382,8,21,14
+    PUSHBUTTON      "ins",IDC_BUTTON17,337,30,21,14
+    PUSHBUTTON      "hm",IDC_BUTTON18,360,30,21,14
+    PUSHBUTTON      "pup",IDC_BUTTON19,383,30,21,14
+    PUSHBUTTON      "del",IDC_BUTTON20,337,49,21,14
+    PUSHBUTTON      "end",IDC_BUTTON21,360,49,21,14
+    PUSHBUTTON      "pdg",IDC_BUTTON22,383,49,21,14
+    PUSHBUTTON      "`",IDC_BUTTON23,7,30,21,14
+    PUSHBUTTON      "1",IDC_BUTTON_1,29,30,21,14
+    PUSHBUTTON      "2",IDC_BUTTON_2,51,30,21,14
+    PUSHBUTTON      "3",IDC_BUTTON_3,73,30,21,14
+    PUSHBUTTON      "4",IDC_BUTTON_4,95,30,21,14
+    PUSHBUTTON      "5",IDC_BUTTON_5,118,30,21,14
+    PUSHBUTTON      "6",IDC_BUTTON_6,140,30,21,14
+    PUSHBUTTON      "7",IDC_BUTTON_7,162,30,21,14
+    PUSHBUTTON      "8",IDC_BUTTON_8,184,30,21,14
+    PUSHBUTTON      "9",IDC_BUTTON_9,206,30,21,14
+    PUSHBUTTON      "0",IDC_BUTTON_0,228,30,21,14
+    PUSHBUTTON      "-",IDC_BUTTON_MINUS,250,30,21,14
+    PUSHBUTTON      "=",IDC_BUTTON_EQUAL,273,30,21,14
+    PUSHBUTTON      "<---",IDC_BUTTON_BSP,297,30,21,14
+    PUSHBUTTON      "nlk",IDC_BUTTON_NLK,415,30,21,14
+    PUSHBUTTON      "/",IDC_BUTTON_SS,438,30,21,14
+    PUSHBUTTON      "*",IDC_BUTTON_MULTI,461,30,21,14
+    PUSHBUTTON      "-",IDC_BUTTON_NUM_MINUS,485,30,21,14
+    PUSHBUTTON      "7",IDC_BUTTON_NUM7,415,49,21,14
+    PUSHBUTTON      "8",IDC_BUTTON_NUM8,438,49,21,14
+    PUSHBUTTON      "9",IDC_BUTTON_NUM9,461,49,21,14
+    PUSHBUTTON      "+",IDC_BUTTON_NUM_PLUS,485,49,21,34
+    PUSHBUTTON      "4",IDC_BUTTON_NUM4,415,69,21,14
+    PUSHBUTTON      "5",IDC_BUTTON_NUM5,438,69,21,14
+    PUSHBUTTON      "6",IDC_BUTTON_NUM6,461,69,21,14
+    PUSHBUTTON      "1",IDC_BUTTON_NUM1,415,90,21,14
+    PUSHBUTTON      "2",IDC_BUTTON_NUM2,438,90,21,14
+    PUSHBUTTON      "3",IDC_BUTTON_NUM3,461,90,21,14
+    PUSHBUTTON      "enter",IDC_BUTTON_NUM_ENTER,485,90,21,33
+    PUSHBUTTON      "0",IDC_BUTTON_NUM0,416,109,41,14
+    PUSHBUTTON      ".",IDC_BUTTON_NUM_DOT,462,109,20,14
+    PUSHBUTTON      "tab",IDC_BUTTON_TAB,7,49,21,14
+    PUSHBUTTON      "q",IDC_BUTTON_Q,29,49,21,14
+    PUSHBUTTON      "w",IDC_BUTTON_W,51,49,21,14
+    PUSHBUTTON      "e",IDC_BUTTON_E,73,49,21,14
+    PUSHBUTTON      "r",IDC_BUTTON_R,95,49,21,14
+    PUSHBUTTON      "t",IDC_BUTTON_T,117,49,21,14
+    PUSHBUTTON      "y",IDC_BUTTON_Y,139,49,21,14
+    PUSHBUTTON      "u",IDC_BUTTON_U,161,49,21,14
+    PUSHBUTTON      "i",IDC_BUTTON_I,183,49,21,14
+    PUSHBUTTON      "o",IDC_BUTTON_O,205,49,21,14
+    PUSHBUTTON      "p",IDC_BUTTON_P,228,49,21,14
+    PUSHBUTTON      "[",IDC_BUTTON_BR1,251,49,21,14
+    PUSHBUTTON      "]",IDC_BUTTON_BR2,274,49,21,14
+    PUSHBUTTON      "\\",IDC_BUTTON_SSS,298,49,21,14
+    PUSHBUTTON      "lock",IDC_BUTTON_CAP,7,69,21,14
+    PUSHBUTTON      "a",IDC_BUTTON_A,29,69,21,14
+    PUSHBUTTON      "s",IDC_BUTTON_S,51,69,21,14
+    PUSHBUTTON      "d",IDC_BUTTON_D,73,69,22,14
+    PUSHBUTTON      "f",IDC_BUTTON_F,96,69,21,14
+    PUSHBUTTON      "g",IDC_BUTTON_G,118,69,21,14
+    PUSHBUTTON      "h",IDC_BUTTON_H,140,69,21,14
+    PUSHBUTTON      "j",IDC_BUTTON_J,162,69,21,14
+    PUSHBUTTON      "k",IDC_BUTTON_K,184,69,21,14
+    PUSHBUTTON      "l",IDC_BUTTON_L,207,69,21,14
+    PUSHBUTTON      ";",IDC_BUTTON79,229,69,21,14
+    PUSHBUTTON      "'",IDC_BUTTON80,252,69,21,14
+    PUSHBUTTON      "enter",IDC_BUTTON_ENTER,275,69,44,14
+    PUSHBUTTON      "shift",IDC_BUTTON_LSHIFT,7,88,32,14
+    PUSHBUTTON      "z",IDC_BUTTON_Z,40,88,21,14
+    PUSHBUTTON      "x",IDC_BUTTON_X,62,88,21,14
+    PUSHBUTTON      "c",IDC_BUTTON_C,84,88,21,14
+    PUSHBUTTON      "v",IDC_BUTTON_V,107,88,21,14
+    PUSHBUTTON      "b",IDC_BUTTON_B,129,88,21,14
+    PUSHBUTTON      "n",IDC_BUTTON_N,151,88,21,14
+    PUSHBUTTON      "m",IDC_BUTTON_M,173,88,21,14
+    PUSHBUTTON      ",",IDC_BUTTON91,195,88,21,14
+    PUSHBUTTON      ".",IDC_BUTTON92,217,88,21,14
+    PUSHBUTTON      "/",IDC_BUTTON93,240,88,21,14
+    PUSHBUTTON      "shift",IDC_BUTTON94,267,88,52,14
+    PUSHBUTTON      "ctrl",IDC_BUTTON_CTRL_LEFT,7,109,24,14
+    PUSHBUTTON      "win",IDC_BUTTON_LWIN,34,109,21,14
+    PUSHBUTTON      "alt",IDC_BUTTON_ALT_LEFT,60,109,21,14
+    PUSHBUTTON      "",IDC_BUTTON_SPACE,86,109,119,15
+    PUSHBUTTON      "alt",IDC_BUTTON105,209,109,21,14
+    PUSHBUTTON      "win",IDC_BUTTON107,237,109,21,14
+    PUSHBUTTON      "right",IDC_BUTTON108,263,109,21,14
+    PUSHBUTTON      "ctrl",IDC_BUTTON109,289,109,30,14
+    PUSHBUTTON      "<--",IDC_BUTTON_ARLEFT,337,109,21,14
+    PUSHBUTTON      "V",IDC_BUTTON_ARDOWN,360,109,21,14
+    PUSHBUTTON      "^",IDC_BUTTON_ARUP,360,90,21,14
+    PUSHBUTTON      "-->",IDC_BUTTON_ARRIGHT,383,109,21,14
+    GROUPBOX        "",IDC_STATIC,334,0,73,68
+    GROUPBOX        "",IDC_STATIC,6,22,319,109
+    GROUPBOX        "",IDC_STATIC,6,1,319,24
+    GROUPBOX        "",IDC_STATIC,411,23,99,107
+    GROUPBOX        "",IDC_STATIC,335,81,72,49
+    GROUPBOX        "",IDC_STATIC,411,2,99,21
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON         "res\\keyboard.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

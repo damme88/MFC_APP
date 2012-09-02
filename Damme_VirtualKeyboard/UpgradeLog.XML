@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VirtualKeyboard">
+</Property><Property Name="Solution File" Value="G:\HOC TAP\KHOA HOC KY THUAT\KY THUAT LAP TRINH\MFC SOURCE CODE FREE\VirtualKeyboard\VirtualKeyboard.sln">
+</Property><Property Name="Date" Value="Saturday, July 28, 2012">
+</Property><Property Name="Time" Value="1:09 AM">
+</Property></Properties><Event ErrorLevel="0" Project="VirtualKeyboard" Source="VirtualKeyboard\VirtualKeyboard.vcproj" Description="Converting project file 'G:\HOC TAP\KHOA HOC KY THUAT\KY THUAT LAP TRINH\MFC SOURCE CODE FREE\VirtualKeyboard\VirtualKeyboard\VirtualKeyboard.vcproj'.">
+</Event><Event ErrorLevel="1" Project="VirtualKeyboard" Source="VirtualKeyboard\VirtualKeyboard.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="VirtualKeyboard" Source="VirtualKeyboard\VirtualKeyboard.vcproj" Description="Done converting to new project file 'G:\HOC TAP\KHOA HOC KY THUAT\KY THUAT LAP TRINH\MFC SOURCE CODE FREE\VirtualKeyboard\VirtualKeyboard\VirtualKeyboard.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="VirtualKeyboard" Source="VirtualKeyboard\VirtualKeyboard.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="VirtualKeyboard.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="VirtualKeyboard.sln" Description="Converted">
+</Event></UpgradeLog>
