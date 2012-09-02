@@ -2,7 +2,8 @@
 *.slo
 *.lo
 *.o
-
+*.opensdf
+*.sdf
 # Compiled Dynamic libraries
 *.so
 
