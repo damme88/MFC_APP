@@ -6,7 +6,7 @@
 *.sdf
 # Compiled Dynamic libraries
 *.so
-
+*ipch/
 # Compiled Static libraries
 *.lai
 *.la
