@@ -110,6 +110,17 @@
 #define IDC_BUTTON_ARUP                 1169
 #define IDC_BUTTON_ARRIGHT              1170
 
+#define ID_ONE1                           2001
+#define ID_ONE2                           2001
+#define ID_ONE3                           2001
+#define ID_ONE4                           2001
+#define ID_ONE5                           2001
+
+
+
+
+
+
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
