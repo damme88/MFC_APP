@@ -13,6 +13,8 @@ IMPLEMENT_DYNAMIC(CMFCToolBarXml, CMFCToolBar)
 CMFCToolBarXml::CMFCToolBarXml()
 {
   count_toolbar_ = 0;
+  size_of_image_.cx = 32;
+  size_of_image_.cy = 32;
 }
 
 CMFCToolBarXml::~CMFCToolBarXml()
@@ -37,7 +39,7 @@ void CMFCToolBarXml::LoadToolBarXml(std::string str_data_xml, SIZE button_size, 
   PaserXml(index_toolbar);
   for (int j = 0; j<data_xml[index_toolbar].button.size(); j++) {
     str = data_xml[index_toolbar].button[j].c_str();
-    SetImageXml(str, button_size);
+    SetImageXml(str, size_of_image_);
   }
 }
 
@@ -161,7 +163,7 @@ void CMFCToolBarXml::SetButtonXml(int index_toolbar, SIZE button_size) {
   std::string bitmap_name = "";
   std::string moudle_folder_path = CStringA(GetPathModule());
   static long index_image = 0;
-  SetSizes(button_size, button_size);
+  SetSizes(button_size, size_of_image_);
   for (int j = 0 ; j< data_xml[index_toolbar].button.size(); j ++) {
     bitmap_name = moudle_folder_path + "\\res\\" + data_xml[index_toolbar].button[j] + ".bmp";
     check_file.open(bitmap_name, std::ios::in);
@@ -180,18 +182,16 @@ void CMFCToolBarXml::SetButtonXml(int index_toolbar, SIZE button_size) {
 
 void CMFCToolBarXml::SetImageXml(LPCTSTR bitmap_name, SIZE image_size) {
  CString path_file = GetPathModule() + L"\\res\\" + bitmap_name;
- static CMFCToolBarImages pUserImage_;
+ static CMFCToolBarImages *pUserImage_ = CMFCToolBar::GetImages();
   SIZE size;
   size = image_size;
     HBITMAP bitmap = (HBITMAP)LoadImage(AfxGetResourceHandle(), path_file,
-      IMAGE_BITMAP, size.cx, size.cy, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+      IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
     if (bitmap == NULL) {
       return;
     }
-    pUserImage_.SetImageSize(size);
-    pUserImage_.AddImage(bitmap, TRUE);
-    CMFCToolBar::SetUserImages(&pUserImage_);
-    CMFCToolBar::GetImages()->Load(path_file);
+    pUserImage_->SetImageSize(size);
+    pUserImage_->AddImage(bitmap, TRUE);
 }
 
 

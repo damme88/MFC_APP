@@ -13,3 +13,5 @@
 *.a
 *debug/
 *release/
+*.suo
+*.aps

@@ -23,6 +23,7 @@ private:
   std::vector<std::string> sub_str;
   std::vector<toolbar_data> data_xml;
   std::vector<unsigned int > number_item;
+  SIZE size_of_image_;
 protected:
 	DECLARE_MESSAGE_MAP()
 

@@ -49,6 +49,7 @@ public:
   void ReadFileXml(CString file_path);
   void CreateXmlFile(CString file_name);
   void GetCountToolBar(std::string xml_data_str);
+  CString CMainFrame::GetPathModule();
 // Generated message map functions
 protected:
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);

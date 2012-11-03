@@ -11,6 +11,8 @@
 #define new DEBUG_NEW
 #endif
 
+#define AFX_TOOLBAR_SPACE 4
+
 // CMainFrame
 BOOL variable = TRUE;
 IMPLEMENT_DYNCREATE(CMainFrame, CFrameWndEx)
@@ -76,9 +78,13 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
   //EnableDocking(CBRS_ALIGN_ANY);
   //DockPane(&m_wndMenuBar);
 	// prevent the menu bar from taking the focus on activation
-	CMFCPopupMenu::SetForceMenuFocus(FALSE);
+  CMFCPopupMenu::SetForceMenuFocus(FALSE);
 
-  ReadFileXml(L"ToolBarConfig.xml");
+  double scale_windows = afxGlobalData.GetRibbonImageScale();
+  button_size = CSize((button_size.cx + AFX_TOOLBAR_SPACE)*scale_windows, (button_size.cy + AFX_TOOLBAR_SPACE)*scale_windows);
+
+  CString xml_path_file = GetPathModule() + L"\\ToolBarConfig.xml";
+  ReadFileXml(xml_path_file);
   GetCountToolBar(str_xml_full_);
   if (count_ == 0)
     return 0;
@@ -250,7 +256,7 @@ void CMainFrame::ReadFileXml(CString file_path) {
   std::fstream file;
   char ch;
   file.open(file_path, std::ios::in);
-  if (!file) {
+  while (!file) {
     CreateXmlFile(file_path);
     file.open(file_path, std::ios::in);
   }
@@ -325,4 +331,11 @@ void CMainFrame::GetCountToolBar(std::string xml_data_str) {
       }
     }
   }
+}
+
+CString CMainFrame::GetPathModule() {
+  CString full_path = L"";
+  ::GetModuleFileName(NULL, full_path.GetBufferSetLength(MAX_PATH+1), MAX_PATH);
+  full_path = full_path.Left(full_path.ReverseFind('\\'));
+  return full_path;
 }
