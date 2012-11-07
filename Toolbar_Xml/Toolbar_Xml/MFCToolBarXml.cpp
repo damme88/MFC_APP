@@ -139,14 +139,14 @@ void CMFCToolBarXml::OnHandleMapID(int index) {
     inspect_xml_["file_printer"] = ID_FILE_TOOLBAR_PRINTER;
   if (data_xml[index].button[j] == "file_help")
     inspect_xml_["file_help"] = ID_FILE_TOOLBAR_HELP;
-  if (data_xml[index].button[j] == "show1")
-    inspect_xml_["show1"] = ID_SHOW1;
-  if (data_xml[index].button[j] == "show2")
-    inspect_xml_["show2"] = ID_SHOW2;
-    if (data_xml[index].button[j] == "show3")
-    inspect_xml_["show3"] = ID_SHOW3;
-  if (data_xml[index].button[j] == "show4")
-    inspect_xml_["show4"] = ID_SHOW4;
+  if (data_xml[index].button[j] == "zoom_in")
+    inspect_xml_["zoom_in"] = ID_SHOW1;
+  if (data_xml[index].button[j] == "zoom_out")
+    inspect_xml_["zoom_out"] = ID_SHOW2;
+    if (data_xml[index].button[j] == "zoom_fit")
+    inspect_xml_["zoom_fit"] = ID_SHOW3;
+  if (data_xml[index].button[j] == "simulation_play")
+    inspect_xml_["simulation_play"] = ID_SHOW4;
    }
 }
 

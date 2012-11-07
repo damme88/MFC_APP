@@ -275,7 +275,7 @@ void CMainFrame::CreateXmlFile(CString file_name) {
                              "separator",
                              "file_printer", "file_help"};
 
-  const char *data_show[] = {"show1", "separator", "show2", "separator", "show3", "separator", "show4"};
+  const char *data_view[] = {"zoom_in", "separator", "zoom_out", "separator", "zoom_fit", "separator", "simulation_play"};
 
   const char *key_file[] = {"<toolbar name = \"file_toolbar\">", "</toolbar>"};
   const char *key_show[] = {"<toolbar name = \"show_toolbar\">", "</toolbar>"};
@@ -299,7 +299,7 @@ void CMainFrame::CreateXmlFile(CString file_name) {
   file_xml << key_show[0];
   for (int i = 0; i< 7; i++ ) {
     file_xml << str_down << str_tab << str_tab;
-    file_xml << key_button[0] << data_show[i] << key_button[1];
+    file_xml << key_button[0] << data_view[i] << key_button[1];
   }
   file_xml <<str_down << str_tab;
   file_xml << key_show[1];
@@ -339,3 +339,5 @@ CString CMainFrame::GetPathModule() {
   full_path = full_path.Left(full_path.ReverseFind('\\'));
   return full_path;
 }
+
+
