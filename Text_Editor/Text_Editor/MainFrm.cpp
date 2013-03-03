@@ -289,7 +289,7 @@ void CMainFrame::OnEditRedo() {
 void CMainFrame::OnFileNew() {
   rich_edit_.SetWindowText(L"");
 }
-void CMainFrame::OnFileOpen(){
+void CMainFrame::OnFileOpen() {
 	CString szFilters = L"Text Files (*.txt)|*.txt|All Files (*.*)|*.*|";  // Text Files (*.txt*)
                                                                           // All Files (*.*)
   CFileDialog file_dlg (TRUE, L"txt", L"*.txt", OFN_FILEMUSTEXIST| OFN_HIDEREADONLY, szFilters, this);
@@ -320,6 +320,9 @@ DWORD CALLBACK MyStreamCallBack(CFile *dwCookie, LPBYTE pbBuff, LONG cb, LONG *p
 
 void CMainFrame::ReadFile() {
   CString file_name = str_path_name_;
+  if (str_path_name_ == "") {
+    return;
+  }
   file_name.Replace(__T("\\"), _T("\\\\"));
   
   CFile cFile(file_name, CFile::modeRead);
