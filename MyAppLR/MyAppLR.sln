@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyAppLR", "MyAppLR\MyAppLR.vcxproj", "{4BA57C0B-938A-4496-921B-4202D72C9E1E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LocalResDLL", "LocalResDLL\LocalResDLL.vcxproj", "{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugVNI|Win32 = DebugVNI|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA57C0B-938A-4496-921B-4202D72C9E1E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4BA57C0B-938A-4496-921B-4202D72C9E1E}.Debug|Win32.Build.0 = Debug|Win32
+		{4BA57C0B-938A-4496-921B-4202D72C9E1E}.DebugVNI|Win32.ActiveCfg = DebugVNI|Win32
+		{4BA57C0B-938A-4496-921B-4202D72C9E1E}.DebugVNI|Win32.Build.0 = DebugVNI|Win32
+		{4BA57C0B-938A-4496-921B-4202D72C9E1E}.Release|Win32.ActiveCfg = Release|Win32
+		{4BA57C0B-938A-4496-921B-4202D72C9E1E}.Release|Win32.Build.0 = Release|Win32
+		{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}.Debug|Win32.Build.0 = Debug|Win32
+		{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}.DebugVNI|Win32.ActiveCfg = Debug|Win32
+		{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}.DebugVNI|Win32.Build.0 = Debug|Win32
+		{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}.Release|Win32.ActiveCfg = Release|Win32
+		{A52E9F64-6A37-41D5-A7C6-B78BA6C03A43}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
